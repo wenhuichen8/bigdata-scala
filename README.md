@@ -19,7 +19,7 @@
 ```
   hdfs dfs -cat /chenwenhui/out/index/*
 ```
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 #### 作业二：Distcp 的 Spark 实现
 
