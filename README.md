@@ -34,3 +34,8 @@
 ```
 spark-submit --class distcp.DistcpSpark  --master local[*]  /home/student1/chenwenhui/bigdata-scala-1.0-SNAPSHOT.jar -i  -m 3  "/chenwenhui" "/chenwenhui-copy"
 ```
+##### 3、查看运行结果
+```
+ hdfs dfs -ls /chenwenhui-copy
+```
+![img_2.png](img_2.png)
