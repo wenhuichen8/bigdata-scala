@@ -1,7 +1,7 @@
 
 #### 作业一：使用 RDD API 实现带词频的倒排索引
  
-- 源代码：
+- 源代码：https://github.com/wenhuichen8/bigdata-scala/tree/main/src/main/scala/indexreverse
 
 ##### 1、在hdfs上创建目录
  ```
@@ -22,6 +22,8 @@
 ![img.png](img.png)
 
 #### 作业二：Distcp 的 Spark 实现
+
+- 源代码 https://github.com/wenhuichen8/bigdata-scala/tree/main/src/main/scala/distcp
 
 ##### 1、在hdfs上创建目
 
