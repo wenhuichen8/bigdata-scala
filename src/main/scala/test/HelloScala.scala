@@ -59,7 +59,7 @@ object HelloScala {
   def m2(a: Int): Int = {
     a * 100
   }
-
+  //函数名  =函数参数 =>函数体
   val fun1 = (i: Int) => i * 10;
   val r = 1 to 10;
   r.map(fun1)
@@ -72,22 +72,27 @@ object HelloScala {
   }
 
   val fun2 = (i: Int, j: Int) => (i + j) * 10;
+
   //方法参数是 函数
-  //  def m4(func:Int,Int=>Int):Int={
-  //    //调用函数
-  //    func(3)
-  //  }
-
+  def m4(func: (Int, Int) => Int): Int = {
+    //调用函数
+    func(3, 4)
+  }
+  //函数func3 参数Int => 返回类型 = 函数体，其中x为传进来的参数
   var func3: Int => String = { x => x.toString; }
-
+  //func3 与 func4 等价
   var func4 = (x: Int) => {
     x.toString;
   }
-
+  //函数 func5 参数x,y => 返回 (y, x),返回的为元组
   val func5 = (x: Int, y: Double) => (y, x)
+
+  //func5 与 func6 等价，a和 b为传进来的参数
   val func6: (Int, Double) => (Double, Int) = {
+    //a和 b为传进来的参数 => 使用参数的代码
     (a, b) => (b, a)
   }
 
+  
 
 }
