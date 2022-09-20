@@ -1,5 +1,6 @@
 ##### 1、基于 Lambda 架构的数据平台架构
-![img_3.png](img_3.png)
+
+<img alt="img_3.png" src="img_3.png"/>
 
 数据平台分为三层：
 - 1、数据采集层：通过sqoop、datax将数据库等结构化数据抽取都hdfs、kafka。通过flume或logstash将服务器日志、行为日志等非结构化数据实时采集到kafka。
